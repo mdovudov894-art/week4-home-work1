@@ -1,0 +1,54 @@
+*{
+    font-family: "DM Sans";
+}
+
+.logo{
+    height: 30px;
+    width: 150px;
+    margin-top: 13px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.links{
+    display: flex;
+    gap: 30px;
+}
+
+.fa-bars{
+    display: none !important;
+    cursor: pointer;
+}
+.header-hr{
+    border: none;
+    height: 0.4px;
+    background-color: rgb(201, 193, 193);
+}
+.xat{
+    width: 50px;
+    height: 2px;
+    background-color: #69B99D;
+    position: relative;
+    left: 793px;
+    top: -10px;
+}
+
+@media (max-width:500px){
+    header{
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+    .links{
+        display: none !important;
+    }
+    .xat{
+        display: none;
+    }
+}
