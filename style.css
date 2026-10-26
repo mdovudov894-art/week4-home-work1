@@ -14,12 +14,11 @@
 header{
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
 }
 .links{
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .fa-bars{
@@ -72,18 +71,44 @@ header{
             margin-top: 10px;
         }
     }
+    img{
+        width: 600px;
+    }
 }
 
-@media (max-width:500px){
+.section2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 170px;
+    img{
+        width: 500px;
+    }
+
+    h1{
+        font-family: "Poppins";
+        color: #0F241D;
+    }
+    p{
+        color:#767676;
+        font-family: "DM Sans";
+        font-size: 15px;
+    }
+}
+
+@media (max-width:700px){
     header{
         justify-content: space-between;
+        align-items: center;
         margin: 20px;
     }
     .fa-bars{
         display: block !important;
+        font-size: 20px;
     }
     .links{
         display: none !important;
+    
     }
     .xat{
         display: none;
@@ -100,5 +125,15 @@ header{
     .saude-text{
         text-align: center;
         margin: auto !important;
+    }
+    .section2{
+        flex-direction: column;
+
+        img{
+            width: 100%;
+        }
+        .sobre-text{
+            margin: 15px;
+        }
     }
 }
