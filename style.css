@@ -2,7 +2,7 @@
     font-family: "DM Sans";
 }
 .container{
-    max-width: 15400px;
+    max-width: 1400px;
     margin: 0 auto; 
 }
 .logo{
@@ -227,7 +227,6 @@ footer{
     align-items: center;
     margin-top: 130px;
     color: #fff;
-
     .f2{
         display: flex;
         gap: 20px;
