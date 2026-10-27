@@ -2,13 +2,14 @@
     font-family: "DM Sans";
 }
 .container{
-    max-width: 1200px;
-    margin: auto; 
+    max-width: 15400px;
+    margin: 0 auto; 
 }
 .logo{
     height: 30px;
     width: 150px;
     margin-top: 13px;
+    margin-left: 130px;
 }
 
 header{
@@ -19,6 +20,7 @@ header{
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-right: 50px;
 }
 
 .fa-bars{
@@ -34,9 +36,8 @@ header{
     width: 50px;
     height: 2px;
     background-color: #69B99D;
-    position: relative;
-    left: 770px;
-    top: -10px;
+    position: absolute;
+    top: 68px;
 }
 
 .section1{
@@ -174,9 +175,71 @@ header{
     margin-top: 50px;
 }
 
+.section5{
+    display: flex;
+    justify-content: space-around;
+}
+.entre-text{
+    h1{
+        font-family: "Poppins";
+    }
+    p{
+        color: #767676;
+    }
+    button{
+        display: flex;
+        gap: 10px;
+        width: 230px;
+        height: 50px;
+        align-items: center;
+        background-color: #69B99D;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+        border-radius: 4px;
+        justify-content: center;
+    }
+}
+.info-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+    margin-left: 20px;
+    .tel{
+        width: 150px;
+    }
+    .addres{
+        width: 180px;
+    }
+    .email{
+        width: 250px;
+    }
+
+}
+
+footer{
+    background-color: #69B99D;
+    display: flex;
+    justify-content: space-around;
+    height: 230px;
+    gap: 70px;
+    align-items: center;
+    margin-top: 130px;
+    color: #fff;
+
+    .f2{
+        display: flex;
+        gap: 20px;
+    }
+}
 
 
-@media (max-width:900px){
+
+@media (max-width:500px){
+    .logo{
+        margin-left: 10px;
+    }
     header{
         justify-content: space-between;
         align-items: center;
@@ -216,6 +279,9 @@ header{
             margin: 15px;
         }
     }
+    .entre-text{
+        margin-left: 20px;
+    }
     .section3{
         flex-direction: column;
         margin-top: 40px;
@@ -234,14 +300,36 @@ header{
     .section4{
         h1{
             text-align: start;
-            font-size: 43px;
+            font-size: 23px;
+            width: 70%;
+            margin-left:-50px;
         }
     }
     .box-s4{
         flex-direction: column;
         align-items: center;
         div{
-            width: 75%;
+            width: 70%;
+        }
+    }
+    .section5{
+        flex-direction: column;
+
+        button{
+            margin-top: 40px;
+        }
+    }
+    footer{
+        flex-direction: column;
+        align-items: start;
+        .f2{
+            margin-left: 20px;
+            margin-top: -40px;
+            margin-bottom: 60px;
+        }
+        .f1{
+            margin-left: 20px;
+            margin-top: 20px;
         }
     }
 }
